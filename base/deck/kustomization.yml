@@ -4,7 +4,8 @@ resources:
 - deployment.yml
 - service.yml
 labels:
-  app.kubernetes.io/name: deck
+- pairs:
+    app.kubernetes.io/name: deck
 configMapGenerator:
 - name: deck
 - name: deck-env

@@ -5,4 +5,5 @@ resources:
 - statefulset.yml
 - service.yml
 labels:
-  app.kubernetes.io/name: redis
+- pairs:
+    app.kubernetes.io/name: redis

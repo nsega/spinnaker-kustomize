@@ -5,6 +5,7 @@ resources:
 - service.yml
 - serviceaccount.yml
 labels:
-  app.kubernetes.io/name: echo
+- pairs:
+    app.kubernetes.io/name: echo
 configMapGenerator:
 - name: echo

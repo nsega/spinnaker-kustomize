@@ -5,6 +5,7 @@ resources:
 - service.yml
 - serviceaccount.yml
 labels:
-  app.kubernetes.io/name: orca
+- pairs:
+    app.kubernetes.io/name: orca
 configMapGenerator:
 - name: orca

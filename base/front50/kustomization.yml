@@ -5,6 +5,7 @@ resources:
 - service.yml
 - serviceaccount.yml
 labels:
-  app.kubernetes.io/name: front50
+- pairs:
+    app.kubernetes.io/name: front50
 configMapGenerator:
 - name: front50

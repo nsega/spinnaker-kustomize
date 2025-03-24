@@ -5,7 +5,8 @@ resources:
 - statefulset.yml
 - service.yml
 labels:
-  app.kubernetes.io/name: mariadb
+- pairs:
+    app.kubernetes.io/name: mariadb
 
 # TODO: figure out why init.sh gets \n's instead of block like config.sh - `init.sh: |`
 # configMapGenerator:

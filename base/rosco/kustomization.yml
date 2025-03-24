@@ -5,6 +5,7 @@ resources:
 - service.yml
 - serviceaccount.yml
 labels:
-  app.kubernetes.io/name: rosco
+- pairs:
+    app.kubernetes.io/name: rosco
 configMapGenerator:
 - name: rosco

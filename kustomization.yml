@@ -31,6 +31,6 @@ images:
 - name: us-docker.pkg.dev/spinnaker-community/docker/rosco
   newTag: master-latest-unvalidated
 labels:
-- includeSelectors: true
-  pairs:
-    app.kubernetes.io/part-of: spinnaker
+  - pairs:
+      app.kubernetes.io/part-of: spinnaker
+    includeSelectors: true

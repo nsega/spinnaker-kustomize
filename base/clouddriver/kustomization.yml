@@ -6,7 +6,8 @@ resources:
 - service.yml
 - serviceaccount.yml
 labels:
-  app.kubernetes.io/name: clouddriver
+- pairs:
+    app.kubernetes.io/name: clouddriver
 configMapGenerator:
 - behavior: create
   name: clouddriver

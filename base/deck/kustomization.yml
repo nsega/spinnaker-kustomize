@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - deployment.yml
 - service.yml
-commonLabels:
+labels:
   app.kubernetes.io/name: deck
 configMapGenerator:
 - name: deck

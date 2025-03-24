@@ -4,5 +4,5 @@ resources:
 - configmap.yml
 - statefulset.yml
 - service.yml
-commonLabels:
+labels:
   app.kubernetes.io/name: redis

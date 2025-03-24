@@ -4,7 +4,7 @@ resources:
 - configmap.yml
 - statefulset.yml
 - service.yml
-commonLabels:
+labels:
   app.kubernetes.io/name: mariadb
 
 # TODO: figure out why init.sh gets \n's instead of block like config.sh - `init.sh: |`

@@ -4,7 +4,7 @@ resources:
 - deployment.yml
 - service.yml
 - serviceaccount.yml
-commonLabels:
+labels:
   app.kubernetes.io/name: orca
 configMapGenerator:
 - name: orca

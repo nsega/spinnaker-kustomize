@@ -33,4 +33,5 @@ images:
 labels:
   - pairs:
       app.kubernetes.io/part-of: spinnaker
+      app.kubernetes.io/managed-by: spinnaker
     includeSelectors: true

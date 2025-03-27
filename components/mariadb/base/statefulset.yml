@@ -29,7 +29,7 @@ spec:
           protocol: TCP
         readinessProbe:
           exec:
-            command: ["sh", "-c", "exec mysqladmin status -uroot -p$MARIADB_ROOT_PASSWORD"]
+            command: ["sh", "-c", "mariadb -h 127.0.0.1 -uroot -p${MARIADB_ROOT_PASSWORD} -e 'SELECT 1'"]
           initialDelaySeconds: 20
         resources:
           requests:

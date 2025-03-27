@@ -18,6 +18,8 @@ build: ## Build Kubernetes configuration via kustomize, optionally: 'OUTPUT=exam
 .PHONY: apply
 apply: ## Apply Kubernetes configuration via kustomize
 	kubectl apply -k .
+    kubectl create secret generic kubeconfig --from-file=kubeconfig=.kube/config -n spinnaker
+    kubectl create secret generic googleconfig --from-file=gke_account.json=.gcp/gke_account.json -n spinnaker
 
 .PHONY: prune
 prune: ## Apply Kubernetes configuration via kustomize and prune old. ** CAUTION **

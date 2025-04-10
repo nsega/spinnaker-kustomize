@@ -7,4 +7,6 @@ spec:
   - port: 8087
     protocol: TCP
     targetPort: 8087
+  selector:
+    app.kubernetes.io/name: rosco
   type: ClusterIP

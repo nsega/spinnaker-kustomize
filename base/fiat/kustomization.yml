@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: fiat
+  includeSelectors: true
 configMapGenerator:
 - name: fiat

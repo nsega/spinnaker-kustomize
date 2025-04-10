@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: igor
+  includeSelectors: true
 configMapGenerator:
 - name: igor

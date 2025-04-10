@@ -6,6 +6,7 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: deck
+  includeSelectors: true
 configMapGenerator:
 - name: deck
 - name: deck-env

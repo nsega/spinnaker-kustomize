@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: front50
+  includeSelectors: true
 configMapGenerator:
 - name: front50

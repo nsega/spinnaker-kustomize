@@ -8,6 +8,7 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: clouddriver
+  includeSelectors: true
 configMapGenerator:
 - behavior: create
   name: clouddriver

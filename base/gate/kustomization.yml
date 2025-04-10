@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: gate
+  includeSelectors: true
 configMapGenerator:
 - name: gate

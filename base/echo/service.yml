@@ -7,4 +7,6 @@ spec:
   - port: 8089
     protocol: TCP
     targetPort: 8089
+  selector:
+    app.kubernetes.io/name: echo
   type: ClusterIP

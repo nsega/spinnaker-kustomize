@@ -7,4 +7,6 @@ spec:
   - port: 8084
     protocol: TCP
     targetPort: 8084
+  selector:
+    app.kubernetes.io/name: gate
   type: ClusterIP

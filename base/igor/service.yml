@@ -7,4 +7,6 @@ spec:
   - port: 8088
     protocol: TCP
     targetPort: 8088
+  selector:
+    app.kubernetes.io/name: igor
   type: ClusterIP

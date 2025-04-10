@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: keel
+  includeSelectors: true
 configMapGenerator:
 - name: keel

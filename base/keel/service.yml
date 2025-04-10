@@ -8,3 +8,5 @@ spec:
     protocol: TCP
     targetPort: 7010
   type: ClusterIP
+  selector:
+    app.kubernetes.io/name: keel

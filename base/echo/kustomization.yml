@@ -7,5 +7,6 @@ resources:
 labels:
 - pairs:
     app.kubernetes.io/name: echo
+  includeSelectors: true
 configMapGenerator:
 - name: echo

@@ -1,0 +1,35 @@
+apiVersion: v1
+items:
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      labels:
+        app: web-test-gh-artifact
+      name: web-test-gh-artifact
+      namespace: jarvis-dev
+    spec:
+      progressDeadlineSeconds: 600
+      replicas: 2
+      revisionHistoryLimit: 10
+      selector:
+        matchLabels:
+          app: web-test-gh-artifact
+      strategy:
+        rollingUpdate:
+          maxSurge: 25%
+          maxUnavailable: 25%
+        type: RollingUpdate
+      template:
+        metadata:
+          labels:
+            app: web-test-gh-artifact
+        spec:
+          containers:
+            - image: >-
+                us-central1-docker.pkg.dev/foundationllm-dev/docker/sega-test-nginx:latest
+              imagePullPolicy: Always
+              name: nginx
+          dnsPolicy: ClusterFirst
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+kind: List
